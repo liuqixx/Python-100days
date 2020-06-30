@@ -1,0 +1,32 @@
+1、
+"""
+华氏温度转换为摄氏温度
+Author: xixi
+20200630 17:28
+"""
+
+a = float(input("输入华氏温度："))
+c = (a - 32) / 1.8
+print('%.1f=%.1f' % (a, c))
+
+2、
+20200630 20:03
+"""
+
+import math
+
+r = float(input("输入半径值："))
+C = 2 * (math.pi) * r
+S = (math.pi) * r * r
+print('周长=%.1f,面积=%.1f' % (C, S))
+
+3、
+"""
+输入年份判断是不是闰年，如果是，输出True，不是，输出False
+Author: xixi
+20200630 20:14
+"""
+
+year = int(input("请输入年份："))
+a = (year % 4 == 0 and year % 100 != 0) or year % 400 == 0
+print(a)
