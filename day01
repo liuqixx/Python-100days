@@ -21,3 +21,18 @@
 在模棱两可的时候，不要去猜测
 可以选择的唯一方法是去实现和完成它。
 2、
+"""
+Author: xixi
+"""
+
+import turtle
+turtle.pensize(2)
+turtle.bgcolor("black")
+colors = ["red", "yellow", "purple", "blue"]
+turtle.tracer(False)  # 加快作图速度，这一行可以把图形一次性画好
+for x in range(400):
+    turtle.forward(2*x)
+    turtle.color(colors[x % 4])
+    turtle.left(91)
+    turtle.tracer(True)
+turtle.done()
